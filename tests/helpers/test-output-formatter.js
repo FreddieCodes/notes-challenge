@@ -1,6 +1,7 @@
 var formatOutput = function (title, pass) {
+  text = title.match(/[A-Z][a-z]+/g).join(" ")
   style = "color: blue; width: 300px; display: inline-block;"
-  string = '<div style="' + style + '">' + title + '</div>: '
+  string = '<div style="' + style + '">' + text + '</div>: '
   if (pass) {
     color = 'green'
     output = 'PASS'

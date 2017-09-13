@@ -5,6 +5,8 @@
 
     this.noteList = noteList;
     this.noteList.addNote("Favourite drink: seltzer");
+    // this.noteList.addNote("Favourite food: Pizza");
+    // this.noteList.addNote("Favourite football team: Chelsea");
     this.view = new NoteListView(this.noteList);
   };
 
