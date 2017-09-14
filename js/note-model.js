@@ -2,13 +2,11 @@
 
 // module for 'Note'
 (function(exports) {
-  // n is global
-  var n = 0
+
   // constructor
-  var Note = function (text) {
+  var Note = function (text, id) {
     this.text = text;
-    this.id = n;
-    n += 1;
+    this.id = id;
   };
 
   // returns text property

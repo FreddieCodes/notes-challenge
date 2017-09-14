@@ -8,6 +8,6 @@
     pass = noteOne.getOneNote() === "<div>Note 1</div>"
     formatOutput('testSingleNoteViewChangesInnerHTML', pass)
   };
-
+  //
   testSingleNoteView();
 })(this);

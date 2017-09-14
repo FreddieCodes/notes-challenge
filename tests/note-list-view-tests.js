@@ -15,7 +15,6 @@
     // for (var i = 0; i < array.length; i++) {
     //   array[i]
     // }
-
     pass = view.getNotesView() === "<li><a href=#0>" + text.slice(0,20) + "</a></li><li><a href=#1>" + text2.slice(0,20) + "</a></li>"
     formatOutput('testThatNoteViewWorks', pass)
   };

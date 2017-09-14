@@ -1,13 +1,13 @@
 (function(exports) {
 
   function testNoteObjectId() {
-
-    var note = new Note("message");
-    var note2 = new Note("whatever");
-    pass = note.id === 0;
-    console.log(note.id)
+    noteList = new NoteList()
+    noteList.addNote("message")
+    noteList.addNote("whatever")
+    pass = noteList.notes[0].id === 0;
+    // console.log(note.id)
     formatOutput('testNoteObjectIdIsZero', pass)
-    pass = note2.id === 1;
+    pass = noteList.notes[1].id === 1;
     formatOutput('testNoteObjectIsOne', pass)
   };
   testNoteObjectId();

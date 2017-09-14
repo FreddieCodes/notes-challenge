@@ -9,13 +9,10 @@
     <script src="./js/note-list-view.js"></script>
     <script src="./js/note-controller.js"></script>
     <script src="./js/single-note-view.js"></script>
+    <script src="./js/interface.js"></script>
   </head>
 
   <body>
-    <a href="#1">Tiger</a> |
-      <a href="#lion">Lion</a> |
-      <a href="#cheetah">Cheetah</a> |
-      <a href="#leopard">Leopard</a>
 
       <div id="note"></div>
 
@@ -24,6 +21,18 @@
     <div id="app">
       hello
     </div>
+
+    <section>
+  		<form>
+  			<textarea rows="10" cols="50" type="textarea" name="textarea" id="noteForm"></textarea>
+  			<br>
+  		</form>
+  		<button id ="btn"> Post </button>
+  	</section>
+
+
+
+
 
     <script>
 ///////////
@@ -58,5 +67,24 @@
       getIdOne.innerHTML = "Boo"
 
     </script>
+
+<script>
+
+</script>
+
+
   </body>
 </html>
+
+
+<!-- var Class = function() {
+	// this. will work here
+	this.noteList = []
+}
+
+var Class.prototype.something = function() {
+	// this. will work here
+	this.notelist.addNote()
+}
+
+// this. will not work here -->
