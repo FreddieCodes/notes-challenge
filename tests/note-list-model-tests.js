@@ -1,6 +1,7 @@
 
 
 (function(exports) {
+
   function testThatNoteIsCreated() {
 
     var text = "Hello Adam!";
@@ -12,4 +13,5 @@
   };
 
   testThatNoteIsCreated();
+
 })(this);
