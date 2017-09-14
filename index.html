@@ -12,15 +12,51 @@
   </head>
 
   <body>
+    <a href="#1">Tiger</a> |
+      <a href="#lion">Lion</a> |
+      <a href="#cheetah">Cheetah</a> |
+      <a href="#leopard">Leopard</a>
+
+      <div id="note"></div>
+
+    <div id="1">hmmm</div>
 
     <div id="app">
       hello
     </div>
 
     <script>
+///////////
+    // makeUrlChangeShowNoteForCurrentPage();
+    //
+    // function makeUrlChangeShowNoteForCurrentPage() {
+    // window.addEventListener("hashchange", showNoteForCurrentPage);
+    // };
+    //
+    // function showNoteForCurrentPage() {
+    // showNote(getNoteFromUrl(window.location));
+    // };
+    //
+    // function getNoteFromUrl(location) {
+    //   // console.log(location)
+    //   // console.log(location.hash)
+    // return location.hash.split("#")[1];
+    // };
+    //
+    // function showNote(note) {
+    // document
+    //   .getElementById("note")
+    //   .innerHTML = note;
+    // };
+
+   ////////////
       var noteList = new NoteList ();
       var controller = new NoteController (noteList)
       controller.changeView();
+
+      var getIdOne = document.getElementById("1")
+      getIdOne.innerHTML = "Boo"
+
     </script>
   </body>
 </html>

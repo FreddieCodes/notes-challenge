@@ -11,8 +11,12 @@
     list.addNote(text2);
 
     var view = new NoteListView (list)
-    // slice 0,20 so it doesn't show more than 20 characters
-    pass = view.getNotesView() === "<li>" + text.slice(0,20) + "</li><li>" + text2.slice(0,20) + "</li>"
+
+    // for (var i = 0; i < array.length; i++) {
+    //   array[i]
+    // }
+
+    pass = view.getNotesView() === "<li><a href=#0>" + text.slice(0,20) + "</a></li><li><a href=#1>" + text2.slice(0,20) + "</a></li>"
     formatOutput('testThatNoteViewWorks', pass)
   };
 
