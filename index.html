@@ -14,9 +14,7 @@
 
   <body>
 
-      <div id="note"></div>
-
-    <div id="1">hmmm</div>
+    <div id="note"></div>
 
     <div id="app">
       hello
@@ -31,60 +29,38 @@
   	</section>
 
 
-
-
-
     <script>
-///////////
-    // makeUrlChangeShowNoteForCurrentPage();
-    //
-    // function makeUrlChangeShowNoteForCurrentPage() {
-    // window.addEventListener("hashchange", showNoteForCurrentPage);
-    // };
-    //
-    // function showNoteForCurrentPage() {
-    // showNote(getNoteFromUrl(window.location));
-    // };
-    //
-    // function getNoteFromUrl(location) {
-    //   // console.log(location)
-    //   // console.log(location.hash)
-    // return location.hash.split("#")[1];
-    // };
-    //
-    // function showNote(note) {
-    // document
-    //   .getElementById("note")
-    //   .innerHTML = note;
-    // };
+    ////////////
+    makeUrlChangeShowNoteForCurrentPage();
 
-   ////////////
+    function makeUrlChangeShowNoteForCurrentPage() {
+    window.addEventListener("hashchange", showNoteForCurrentPage);
+    };
+
+    function showNoteForCurrentPage() {
+    showNote(getNoteFromUrl(window.location));
+    };
+
+    function getNoteFromUrl(location) {
+    // return location.hash.split("#")[1];
+    var index = location.hash.split("#")[1]
+    // var noteId = noteList.notes[index].id
+    // console.log(noteId);
+    return noteList.notes[index].getText()
+
+    };
+
+    function showNote(htmlNote) {
+    document
+      .getElementById("note")
+      .innerHTML = htmlNote;
+    };
+
+    ////////////
       var noteList = new NoteList ();
       var controller = new NoteController (noteList)
       controller.changeView();
 
-      var getIdOne = document.getElementById("1")
-      getIdOne.innerHTML = "Boo"
-
     </script>
-
-<script>
-
-</script>
-
-
   </body>
 </html>
-
-
-<!-- var Class = function() {
-	// this. will work here
-	this.noteList = []
-}
-
-var Class.prototype.something = function() {
-	// this. will work here
-	this.notelist.addNote()
-}
-
-// this. will not work here -->

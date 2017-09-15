@@ -11,7 +11,6 @@
     return "<div>" + this.singleNote.getText() + "</div>"
   }
 
-
   exports.SingleNoteView = SingleNoteView;
 
 })(this);
